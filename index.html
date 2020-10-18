@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <h1 id="title"> Registration Form! </h1>
+    <p id="description">Please take a moment to fill in the blanks below.</p>
+    <form id="survey-form" action="">
+
+        <fieldset id="signup">
+            <legend>Sign Up</legend>
+            <!-- <label for="username">Username: </label> 
+            <input type="text" id="username" required> <br> -->
+            <label id="email-label" for="email">E-mail </label> 
+            <input type="email" id="email" required placeholder="youremail@gmail.com"> <br>
+            <label id="pw-label" for="pw">Password: </label> 
+            <input type="password" id="pw" required> <br>
+            <label id="rpw-label" for="rpw">Confirmation:</label> 
+            <input type="password" id="rpw" required> <br>
+        </fieldset>
+
+        <fieldset id="personalInfo">
+            <legend>Personal information</legend>
+            <img src="img/datos-personales-icono.png" alt="datospersonales"> <br>
+
+            <label id="name-label" for="name">Name: </label> <br>
+            <input type="text" id="name" placeholder="Enter your name" required> <br>
+    
+            <label for="surname">Surname: </label> <br>
+            <input type="text" id="surname" required placeholder="Enter your surname"> <br>
+            
+            <label id="number-label" for="number">How old are you?</label> <br>
+            <input type="number" min="1" max="99" id="number" required placeholder="1-99"> <br>
+    
+            <label for="occupation">Occupation </label> <br> 
+            <input type="text" id="occupation" placeholder="Student, developer, etc" required> <br>
+
+            <label for="dropdown">Gender </label> <br>
+            <select name="gender" id="dropdown" required>
+                <option value="ninguna" selected="true" >-------</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="decline_to_answer">Decline to answer</option>
+            </select>  <br>
+        </fieldset>
+
+        <fieldset id="contactInfo">
+            <legend>Contact Information:</legend>
+
+            <img src="img/datos-laborales-icono.png" alt="Contactdata"> <br>
+
+            <label for="address">Address: </label> <br>
+            <input class="input-background" type="text" id="address" required> <br>
+
+            <label for="city">Province/State: </label> <br>
+            <input class="input-background" type="text" id="city" required> <br>
+
+            <label for="zipcode">Zip-Code: </label> <br>
+            <input class="input-background" type="number" id="zipcode" required> <br>
+
+            <label for="phone">Phone:</label> <br>
+            <input class="input-background" type="number" id="phone" required> <br>
+        
+            <label for="country">Country: </label> <br>
+            <input class="input-background" type="text" id="country" required> <br>
+            
+        </fieldset>
+
+        <fieldset id="languages">
+            <legend>Languages</legend>
+            <p>How many of these do you speak fluently?</p> 
+
+            <input type="checkbox" id="spanish" name="language" value="spanish"> 
+            <label for="spanish">Spanish</label>
+
+            <input type="checkbox" id="english" name="language" value="english"> 
+            <label for="english">English</label>
+
+            <input type="checkbox" id="german" name="language" value="german"> 
+            <label for="german">German</label>
+
+            <input type="checkbox" id="russian" name="language" value="russian"> 
+            <label for="russian">Russian</label> 
+
+            <input type="checkbox" id="chinese" name="language" value="chinese"> 
+            <label for="chinese">Chinese</label>
+
+            <input type="checkbox" id="french" name="language" value="french"> 
+            <label for="french">French</label>
+
+        </fieldset>
+
+        <fieldset id="textarea-field">
+            <legend>Additional Information</legend>
+            <textarea name="comments" id="comments" cols="30" rows="10" maxlength="300" placeholder="up to 300 characters" ></textarea>
+        </fieldset>
+
+        <fieldset id="question">
+            <legend>How did you hear about us?</legend>
+                <input type="radio" id="google" name="from" value="google">
+                <label for="google">Google</label><br>
+
+                <input type="radio" id="facebook" name="from" value="facebook">
+                <label for="facebook">Facebook</label><br>
+
+                <input type="radio" id="twitter" name="from" value="twitter">
+                <label for="twitter">Twitter</label> <br>
+
+                <input type="radio" id="youtube" name="from" value="youtube">
+                <label for="youtube">Youtube</label> <br>
+
+                <input type="radio" id="linkedin" name="from" value="linkedin">
+                <label for="linkedin">Linkedin</label> <br>
+
+                <input type="radio" id="other" name="from" value="otherplace">
+                <label for="other">Other</label> <br>
+
+
+        </fieldset>
+
+        <div id="terms-conditionsDiv">
+            <h2>Terms & Conditions:</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ullam optio ut dolorum ratione delectus sit aperiam non consectetur sunt dolores repellat nemo est harum assumenda voluptate deleniti officiis perferendis, quasi rem. Blanditiis et explicabo quaerat consectetur porro repudiandae eius fuga earum tempora. Ad excepturi, odio omnis illo quod sunt.</p>
+            <input type="checkbox" id="terms-conditions" required>
+            <label id="agree">I agree to the terms & conditions.</label>
+            <br> <br>
+
+            <input id="submit" type="submit" name="" value="Submit"> 
+        </div>
+
+
+    </form>
+
+</body>
+</html>
